@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #a93226;
+  --secondary-color: #e6a23c;
+  --text-color: #1a1a1a;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.contact-button {
+  padding: 10px 17px;
+  background: none;
+  border-radius: 8px;
+}
