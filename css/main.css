@@ -154,7 +154,7 @@ p {
 }
 .browser-frame iframe {
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
 .about-us .stars-1 {
@@ -236,4 +236,44 @@ p {
   width: 120px;
   display: block;
   margin-top: 5px;
+}
+
+/* =========== Problem Statement =============== */
+
+.problem-statement {
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 70px 0;
+}
+.problem-statement .image-container {
+  padding: 7px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.problem-statement .image-container img {
+  border-radius: 13px;
+  width: 100%;
+}
+
+.problem-statement .text-content {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.problem-statement .text-content h3 {
+  font-size: 50px;
+  margin: 0;
+  position: relative;
+}
+.problem-statement .text-content .airplane {
+  position: absolute;
+  top: -45px;
+  right: 200px;
 }
