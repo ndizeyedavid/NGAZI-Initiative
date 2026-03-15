@@ -23,139 +23,217 @@ body {
   text-decoration: none;
   color: var(--text-color);
 }
-.buttons{
-    display:flex;
-    align-items: center;
-   gap: 20px;
-    margin-top: 20px;
-
-
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
 }
-
-
-
-
-
 
 .contact-button {
   padding: 10px 17px;
   background: none;
   border-radius: 8px;
 }
-h1{
-    font-size:56px;
-    
+h1 {
+  font-size: 56px;
 }
 
-.contact-butn{
-    background-color: #a93226;
-    color: white;
-    border-radius: 10px;
-    padding: 15px 30px;
-    cursor: pointer;
-    text-decoration: none;
-   
-    
-   
+.contact-butn {
+  background-color: #a93226;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-decoration: none;
 }
-p{
-color: #1a1a1a;
-line-height: 1.6;
-
+p {
+  color: #1a1a1a;
+  line-height: 1.6;
 }
-.follow-link{
-
-    color:#555;
-    text-decoration:none;
-    font-weight: none;
+.follow-link {
+  color: #555;
+  text-decoration: none;
+  font-weight: none;
 }
-.hero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:80px 100px;
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
 }
 
-
-.hero-image{
-width:45%;
+.hero-image {
+  width: 45%;
 }
-.hero-text{
-width:45%;
-}
-
-
-
-.hero-image img{
-width:100%;
-}
-.mission{
-display:flex;
-justify-content: space-between;
-align-items: center;
-padding:  80px 100px;
-background: #fdf8f4;
-
-}
-.mission-text{
-    width: 45%;
-}
-.mission-text h2{
-    font-size: 48px;
-    margin-bottom: 20px;
-
-}
-.mission-text p{
-font-size: 18px;
-line-height: 1.6;
-color:#555;
+.hero-text {
+  width: 45%;
 }
 
-
-
-.mission-image{
-width: 45%; 
-height: 400px;
-position: relative;
-
+.hero-image img {
+  width: 100%;
 }
 
-.map{
-    width:100%;
-    position: relative;
-    z-index: 2;
-
+/* ============ About US ===================== */
+.about-us {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+  padding: 70px 0;
+  gap: 30px;
 }
 
-
-
-
-
-.mission-image img{
-width:100%;
-border: radius 10px;;
-position :relative;
-z-index: 2;
-}
-.circle{
-    width: 300px;
-    height:320px;
-    background: #e6a23c;
-    border-radius: 50%;
-    position: absolute;
-    left: -120px;
-    top:60px;
-    z-index: 1;
+.titles {
+  width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
-.map{
-    width:100%;
-    position: relative;
-    z-index: 2;
-
+.titles h3 {
+  font-size: 47px;
+  font-weight: 800;
+  position: relative;
 }
-.underline{
-width:120px;
-display:block;
-margin-top:5px;
+
+.titles .underline {
+  position: absolute;
+  right: 290px;
+  width: 120px;
+  bottom: -8px;
+}
+
+.browser-frame {
+  width: 1200px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.browser-frame .toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.toolbar .control-options {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.toolbar .control-options div {
+  width: 12px;
+  height: 12px;
+  background-color: #555;
+  border-radius: 50%;
+}
+.toolbar .url-container {
+  width: 500px;
+  text-align: center;
+  background-color: #f1f5f9;
+  border-radius: 5px;
+  padding: 4px 0;
+}
+.toolbar .url-container span {
+  font-size: 12px;
+  color: #542d1f;
+}
+.toolbar .navigation {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.toolbar .navigation i {
+  color: #542d1f;
+}
+.browser-frame iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.about-us .stars-1 {
+  position: absolute;
+  top: 140px;
+  width: 100px;
+  left: 40px;
+}
+
+.about-us .stars-2 {
+  position: absolute;
+  top: 35px;
+  width: 200px;
+  right: 68px;
+}
+
+.about-us .lines {
+  position: absolute;
+  bottom: 0;
+  width: 800px;
+  right: 300px;
+}
+
+.mission {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  background: #fdf8f4;
+}
+.mission-text {
+  width: 45%;
+}
+.mission-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.mission-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.mission-image {
+  width: 45%;
+  height: 400px;
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.mission-image img {
+  width: 100%;
+  border: radius 10px;
+  position: relative;
+  z-index: 2;
+}
+.circle {
+  width: 300px;
+  height: 320px;
+  background: #e6a23c;
+  border-radius: 50%;
+  position: absolute;
+  left: -120px;
+  top: 60px;
+  z-index: 1;
+}
+
+.map {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.underline {
+  width: 120px;
+  display: block;
+  margin-top: 5px;
 }
